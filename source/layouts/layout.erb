@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <%= yield %>
+    <body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Fake</span> Company Corp.</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Promises</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="showcase">
+        <div class="container">
+            <h1>We swear we can, but we can't</h1>
+            <p>"Don't cry, I'm sorry to have deceived you so much, but that's how life is."</p>
+            
+            <span>Vladimir Nabokov.</span>
+        </div>
+    </section>
+    
+    <section id="newsletter">
+        <div class="container">
+            <h1>Get the millionaire mindset. Listen to our audio program!</h1>
+            
+            <audio controls>
+                <source src="0193.ogg.ogg" type="audio/ogg">    
+            </audio>  
+        </div>
+    </section>
+    
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="1day15.jpg" alt="">
+                <h3>Responsible CEO</h3>
+                <p>At Fake company Corp. we take a great pride in having a smooth working process, the team is amazing.</p>
+            </div>            
+            <div class="box">
+                <img src="2day15.jpg" alt="">
+                <h3>Enjoy good memes</h3>
+                <p>The economy crash was not that bad after all, shit happens ya know. But the working process is smoot, ya get that?</p>
+            </div>            
+            <div class="box">
+                <img src="1day15.jpg" alt="">
+                <h3>Graphic Design</h3>
+                <p>Not always, it's more about a good vibe ya know. A picture is a picture after all</p>
+            </div>
+            
+        </div>
+
+    </section>
+    
+    <footer>
+     
+       
+        <p>Day 15 - Copyright &copy; 2017</p>
+
+    </footer>
+</body>
+</html>
+  </body>
+</html>
